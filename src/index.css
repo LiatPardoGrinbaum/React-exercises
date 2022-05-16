@@ -11,4 +11,27 @@ code {
 
 .button1 {
   background: darkcyan;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 400px;
+  background: #fff9c4;
+  margin: 10px;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 280px;
+  height: 360px;
+  background: #f4f4f4;
+  padding: 10px;
 }

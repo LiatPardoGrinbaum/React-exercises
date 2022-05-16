@@ -17,8 +17,8 @@ class Ex4_2_card_props extends React.Component {
 
 const CardComponent = (props) => {
   return (
-    <div style={{ width: "320px", height: "400px", backgroundColor: "#FFF9C4", display: "flex", alignItems: "center", justifyContent: "center", margin: "10px" }}>
-      <div style={{ width: "280px", height: "360px", backgroundColor: "#f4f4f4", display: "flex", alignItems: "center", justifyContent: "space-between", flexDirection: "column", padding: "10px" }}>
+    <div className="container">
+      <div className="innerContainer">
         <div>
           <img src={props.image} alt="sloth" style={{ height: "150px" }}></img>
         </div>
