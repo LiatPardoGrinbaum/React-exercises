@@ -4,23 +4,39 @@ class Ex7_2_hideNseek_state extends React.Component {
   constructor() {
     super();
     this.state = {
-      count: 0,
+      shown: true,
     };
   }
-  incrementCount() {
+  changeShown() {
     this.setState({
-      count: this.state.count + 1,
+      shown: !this.state.shown,
     });
   }
 
   render() {
+    const { shown } = this.state;
+    console.log(shown);
     return (
       <div>
-        <button onClick={() => this.incrementCount()}>Increment</button>
-        <label style={{ margin: "5px" }}>{this.state.count}</label>
+        <div className="outerDiv">
+          <button className="button2" onClick={() => this.changeShown()}>
+            show/hide
+          </button>
+          {shown ? <div className="innerDiv"></div> : null}
+        </div>
       </div>
     );
   }
 }
+
+// class shownOrHide extends React.Component {
+//   render() {
+//     if (this.state.shown) {
+//       return <div className="innerDiv"></div>;
+//     } else {
+//       return <div>ff</div>;
+//     }
+//   }
+// }
 
 export default Ex7_2_hideNseek_state;

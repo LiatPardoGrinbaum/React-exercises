@@ -7,7 +7,7 @@ import Ex4_1_buttons_props from "./components/ex4.1";
 import Ex4_2_card_props from "./components/ex4.2";
 import Ex6_1_buttons_props from "./components/ex6.1";
 import Ex7_1_increment_state from "./components/ex7.1";
-import Ex7_2_hideNseek_state from "./components/ex7.1";
+import Ex7_2_hideNseek_state from "./components/ex7.2";
 
 class App extends React.Component {
   render() {
@@ -18,10 +18,10 @@ class App extends React.Component {
         {/*  <Box1 /> */}
         {/* <Quiz /> */}
         {/* <Ex4_1_buttons_props /> */}
-        <Ex4_2_card_props />
+        {/* <Ex4_2_card_props /> */}
         {/* <Ex6_1_buttons_props /> */}
         {/* <Ex7_1_increment_state /> */}
-        {/* <Ex7_2_hideNseek_state /> */}
+        <Ex7_2_hideNseek_state />
       </div>
     );
   }
