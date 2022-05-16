@@ -38,14 +38,14 @@ code {
 
 .outerDiv {
   width: 150px;
-  height: 200px;
-  border: 1px solid #5c0b65;
+  height: 100px;
+
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   flex-direction: column;
   padding: 5px;
-  background: #f9f9f6;
+  background: #efffd0;
 }
 
 .innerDiv {
@@ -64,4 +64,13 @@ code {
 
 .button2:hover {
   background: #a5eeff;
+}
+
+.button3 {
+  width: 130px;
+  background: white;
+
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 3px 5px;
 }
