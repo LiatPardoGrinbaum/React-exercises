@@ -10,6 +10,7 @@ import Ex7_1_increment_state from "./components/ex7.1";
 import Ex7_2_hideNseek_state from "./components/ex7.2";
 import Ex7_3_inc_dec_state from "./components/ex7.3";
 import Ex8_1_life_cycle from "./components/ex8.1";
+import Ex8_2_box_anim from "./components/ex8.2";
 
 class App extends React.Component {
   render() {
@@ -25,7 +26,8 @@ class App extends React.Component {
         {/* <Ex7_1_increment_state /> */}
         {/* <Ex7_2_hideNseek_state /> */}
         {/* <Ex7_3_inc_dec_state /> */}
-        <Ex8_1_life_cycle />
+        {/* <Ex8_1_life_cycle /> */}
+        <Ex8_2_box_anim />
       </div>
     );
   }
