@@ -11,6 +11,8 @@ import Ex7_2_hideNseek_state from "./components/ex7.2";
 import Ex7_3_inc_dec_state from "./components/ex7.3";
 import Ex8_1_life_cycle from "./components/ex8.1";
 import Ex8_2_box_anim from "./components/ex8.2";
+import Ex8_3_box_change from "./components/ex8.3/ex8.3";
+import Ex9_1_spinner from "./components/ex9.1/ex9.1";
 
 class App extends React.Component {
   render() {
@@ -27,7 +29,9 @@ class App extends React.Component {
         {/* <Ex7_2_hideNseek_state /> */}
         {/* <Ex7_3_inc_dec_state /> */}
         {/* <Ex8_1_life_cycle /> */}
-        <Ex8_2_box_anim />
+        {/* <Ex8_2_box_anim /> */}
+        <Ex8_3_box_change />
+        {/* <Ex9_1_spinner /> */}
       </div>
     );
   }
