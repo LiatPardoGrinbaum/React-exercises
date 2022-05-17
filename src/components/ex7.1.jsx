@@ -7,6 +7,8 @@ class Ex7_1_increment_state extends React.Component {
       count: 0,
     };
   }
+  //we dont have to use the contrctur!
+  //to see mordi's solution he used prevstate its better
   incrementCount() {
     this.setState({
       count: this.state.count + 1,

@@ -12,7 +12,7 @@ class Ex7_2_hideNseek_state extends React.Component {
       shown: !this.state.shown,
     });
   }
-
+  //down beloe to see mordi's solution "the react way" similiar to me but he used that way with &&...
   render() {
     const { shown } = this.state;
     console.log(shown);
