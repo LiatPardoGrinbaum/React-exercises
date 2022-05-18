@@ -9,18 +9,18 @@ class Ex9_1_spinner extends React.Component {
   };
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ isHidden: true });
+      this.setState({ isHidden: true, display: "none" });
     }, 3000);
   }
 
-  componentDidUpdate() {
-    this.setState({ display: "none" });
-  }
+  // componentDidUpdate() {
+  //   this.setState({ display: "none" });
+  // }
 
   render() {
     return (
       <div>
-        <Spinner styling={`${this.state.display}`} hidden={`${this.state.isHidden}`} />
+        <Spinner styling={`${this.state.display}`} hidden={this.state.isHidden} />
       </div>
     );
   }
@@ -33,7 +33,7 @@ const Spinner = (props) => {
       <div className="spinner-1" style={{ display: props.styling }}></div>
       <div className="spinner-1" style={{ display: props.styling }}></div>
 
-      {/*   {props.hidden && <h1>Welcome!</h1>}  figure out why sodnt it works and even without it (when it works) there are errors, and nothing shown after 3 seconds --- error something with did update reapt itself...*/}
+      {props.hidden && <h1>Welcome!</h1>}
     </div>
   );
 };

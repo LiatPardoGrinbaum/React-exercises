@@ -15,7 +15,7 @@ class Ex8_3_box_change extends React.Component {
 
   componentDidMount() {
     this.setState(() => {
-      return { currentColor: "blue" };
+      return { currentColor: "red" };
     });
   }
 
