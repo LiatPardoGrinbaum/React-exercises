@@ -18,6 +18,7 @@ import Ex11_2_checkbox from "./components/ex11.2";
 import Ex11_3_forms from "./components/ex11.3/ex11.3";
 import Ex12_1_API from "./components/ex12.1/ex12.1";
 import Ex13_1_map from "./components/ex13.1/ex13.1";
+import Ex13_2_avatar from "./components/ex13.2/ex13.2";
 
 class App extends React.Component {
   render() {
@@ -41,7 +42,8 @@ class App extends React.Component {
         {/* <Ex11_2_checkbox /> */}
         {/*  <Ex11_3_forms /> */}
         {/*  <Ex12_1_API /> */}
-        <Ex13_1_map />
+        {/* <Ex13_1_map /> */}
+        <Ex13_2_avatar />
       </div>
     );
   }

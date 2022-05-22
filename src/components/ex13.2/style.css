@@ -1,0 +1,36 @@
+.page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.allAvatars-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avatar-container {
+  width: 250px;
+  height: 300px;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.picture img {
+  width: 150px;
+  border-radius: 50%;
+}
