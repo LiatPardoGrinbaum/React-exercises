@@ -15,6 +15,9 @@ import Ex8_3_box_change from "./components/ex8.3/ex8.3";
 import Ex9_1_spinner from "./components/ex9.1/ex9.1";
 import Ex11_1_events_child_parent from "./components/ex11.1/ex11.1";
 import Ex11_2_checkbox from "./components/ex11.2";
+import Ex11_3_forms from "./components/ex11.3/ex11.3";
+import Ex12_1_API from "./components/ex12.1/ex12.1";
+import Ex13_1_map from "./components/ex13.1/ex13.1";
 
 class App extends React.Component {
   render() {
@@ -35,7 +38,10 @@ class App extends React.Component {
         {/* <Ex8_3_box_change /> */}
         {/*  <Ex9_1_spinner /> */}
         {/*  <Ex11_1_events_child_parent /> */}
-        <Ex11_2_checkbox />
+        {/* <Ex11_2_checkbox /> */}
+        {/*  <Ex11_3_forms /> */}
+        {/*  <Ex12_1_API /> */}
+        <Ex13_1_map />
       </div>
     );
   }
