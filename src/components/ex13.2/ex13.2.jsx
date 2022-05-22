@@ -21,19 +21,19 @@ class Ex13_2_avatar extends React.Component {
 
   onChangeInput = (inputValue) => {
     this.setState({ inputVal: inputValue });
-    this.filterAvatars();
+    // this.filterAvatars();
   };
 
   //not working well. why isn't it go back when I delete letters in the input text area?
   //all cards dissapear...
   // why is it "slow"?
-  filterAvatars = () => {
-    const filteredArr = this.state.avatarArr.filter((avatarObj) => {
-      let fullName = avatarObj.name.first.toLowerCase() + " " + avatarObj.name.last.toLowerCase();
-      return fullName.includes(this.state.inputVal.toLowerCase());
-    });
-    this.setState({ avatarArr: filteredArr });
-  };
+  // filterAvatars = () => {
+  //   const filteredArr = this.state.avatarArr.filter((avatarObj) => {
+  //     let fullName = avatarObj.name.first.toLowerCase() + " " + avatarObj.name.last.toLowerCase();
+  //     return fullName.includes(this.state.inputVal.toLowerCase());
+  //   });
+  //   this.setState({ avatarArr: filteredArr });
+  // };
 
   render() {
     return (
