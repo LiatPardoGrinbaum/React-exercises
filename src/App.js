@@ -19,6 +19,9 @@ import Ex11_3_forms from "./components/ex11.3/ex11.3";
 import Ex12_1_API from "./components/ex12.1/ex12.1";
 import Ex13_1_map from "./components/ex13.1/ex13.1";
 import Ex13_2_avatar from "./components/ex13.2/ex13.2";
+import Ex14_1_ref from "./components/ex14.1/ex14.1";
+import Ex14_2_ref from "./components/ex14.2";
+import VideoApp from "./components/codeAlongReact/videoApp";
 
 class App extends React.Component {
   render() {
@@ -43,7 +46,10 @@ class App extends React.Component {
         {/*  <Ex11_3_forms /> */}
         {/*  <Ex12_1_API /> */}
         {/* <Ex13_1_map /> */}
-        <Ex13_2_avatar />
+        {/*  <Ex13_2_avatar /> */}
+        {/*  <Ex14_1_ref /> */}
+        {/* <Ex14_2_ref /> */}
+        <VideoApp />
       </div>
     );
   }

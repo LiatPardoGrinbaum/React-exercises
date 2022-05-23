@@ -15,7 +15,8 @@ code {
   margin-right: 5px;
 }
 
-.container {
+/* I comment this container class it was for ne of the first exercises. but i need that name beacuse of semantic ui */
+/* .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +24,7 @@ code {
   height: 400px;
   background: #fff9c4;
   margin: 10px;
-}
+} */
 
 .innerContainer {
   display: flex;
