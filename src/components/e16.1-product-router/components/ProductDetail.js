@@ -9,7 +9,7 @@ class ProductDetail extends React.Component {
   componentDidMount() {
     this.setState({ store: store });
   }
-  getProductById = () => {
+  /*   getProductById = () => {
     //id from params is a string!
     let index = this.props.match.params.id.slice(1);
     const products = this.state.store;
@@ -20,19 +20,21 @@ class ProductDetail extends React.Component {
     });
     console.log(productObj);
     return productObj;
-  };
+  }; */
   render() {
     // const productObj = this.getProductById();
     const products = this.state.store;
-    let index = this.props.match.params.id.slice(1);
+    let index = this.props.match.params.id;
+    let indexNum = Number(index) - 1;
+    console.log(this.state.store);
     return (
       <div>
         <button style={{ margin: "5px" }}>
           <Link to={"/products"}>back</Link>
         </button>
-        {products.map((product) => {
+        {/*         {products.map((product) => {
           if (Number(index) === product.id) {
-            console.log(typeof product);
+          
             return (
               <div className="productContainer">
                 <h1>{product.title}</h1>
@@ -43,7 +45,17 @@ class ProductDetail extends React.Component {
               </div>
             );
           }
-        })}
+        })} */}
+
+        {products.length > 0 && (
+          <div className="productContainer">
+            <h1>{products[indexNum].title}</h1>
+            <p>{`Prics: ${products[indexNum].price} $`}</p>
+            <div>
+              <img className="productImg" src={products[indexNum].imageUrl}></img>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
