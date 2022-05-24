@@ -22,6 +22,7 @@ import Ex13_2_avatar from "./components/ex13.2/ex13.2";
 import Ex14_1_ref from "./components/ex14.1/ex14.1";
 import Ex14_2_ref from "./components/ex14.2";
 import VideoApp from "./components/codeAlongReact/videoApp";
+import MainApp from "./components/e16.1-product-router/MainApp";
 
 class App extends React.Component {
   render() {
@@ -49,7 +50,9 @@ class App extends React.Component {
         {/*  <Ex13_2_avatar /> */}
         {/*  <Ex14_1_ref /> */}
         {/* <Ex14_2_ref /> */}
-        <VideoApp />
+
+        {/*  <VideoApp /> */}
+        <MainApp />
       </div>
     );
   }
