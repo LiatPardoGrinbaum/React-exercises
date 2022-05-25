@@ -24,6 +24,7 @@ import Ex14_2_ref from "./components/ex14.2";
 import VideoApp from "./components/codeAlongReact/videoApp";
 import MainApp from "./components/e16.1-product-router/MainApp";
 import TodoApp from "./components/todoApp/TodoApp";
+import MainAppCrud from "./components/ex17.1-crud-mini-project/MainAppCrud";
 
 class App extends React.Component {
   render() {
@@ -53,7 +54,8 @@ class App extends React.Component {
         {/* <Ex14_2_ref /> */}
         {/*  <VideoApp /> */}
         {/*   <MainApp /> */}
-        <TodoApp />
+        {/* <TodoApp /> */}
+        <MainAppCrud />
       </div>
     );
   }
