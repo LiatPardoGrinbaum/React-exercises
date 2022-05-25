@@ -1,0 +1,44 @@
+.appContianer {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: row;
+}
+.todosContainer {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.todoTask {
+  flex: 0;
+}
+.update {
+  display: flex;
+
+  gap: 5px;
+}
+.todosContainer input {
+  width: 100%;
+}

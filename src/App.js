@@ -23,6 +23,7 @@ import Ex14_1_ref from "./components/ex14.1/ex14.1";
 import Ex14_2_ref from "./components/ex14.2";
 import VideoApp from "./components/codeAlongReact/videoApp";
 import MainApp from "./components/e16.1-product-router/MainApp";
+import TodoApp from "./components/todoApp/TodoApp";
 
 class App extends React.Component {
   render() {
@@ -50,9 +51,9 @@ class App extends React.Component {
         {/*  <Ex13_2_avatar /> */}
         {/*  <Ex14_1_ref /> */}
         {/* <Ex14_2_ref /> */}
-
         {/*  <VideoApp /> */}
-        <MainApp />
+        {/*   <MainApp /> */}
+        <TodoApp />
       </div>
     );
   }
