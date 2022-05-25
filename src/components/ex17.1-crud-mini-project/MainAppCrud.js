@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-import Person from "./person";
-import Spinner from "./spinner";
-import { API } from "./api";
+import Person from "./Person";
+import Spinner from "./Spinner";
+import { API } from "./API";
 
 class MainAppCrud extends React.Component {
   state = {
@@ -72,8 +72,26 @@ class MainAppCrud extends React.Component {
 
   handleUpdate = async (newName, newCountry, newImage, id) => {
     this.setState({ spinner: true });
-    const updatedPerson = this.state.persons.find((personObj) => {
+    //find by id the person that need to be update
+    const personToBeUpdate = this.state.persons.find((personObj) => {
       return id === personObj.id;
+    });
+    //create an object variable of the updated person
+    const updatedPerson = { ...personToBeUpdate, name: newName, country: newCountry, image: newImage };
+    //send the update person by api request and change it there
+    const { data } = await API.put(`/person/${id}`, updatedPerson);
+    //now i need to update it in my state, I'll take data beacause its more relibale data (comparing to updatedPerson)
+    this.setState((prev) => {
+      return {
+        persons: prev.persons.map((person) => {
+          if (person.id === id) {
+            return data;
+          } else {
+            return person;
+          }
+        }),
+        spinner: false,
+      };
     });
     try {
     } catch (err) {
@@ -94,7 +112,7 @@ class MainAppCrud extends React.Component {
             </button>
           </div>
         </div>
-        {this.state.spinner ? <Spinner /> : <div className="card-container">{this.insertPersons()}</div>}
+        <div>{this.state.spinner ? <Spinner /> : <div className="card-container">{this.insertPersons()}</div>}</div>
       </div>
     );
   }
