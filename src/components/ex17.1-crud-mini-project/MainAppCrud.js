@@ -12,6 +12,7 @@ class MainAppCrud extends React.Component {
     inputName: "",
     country: "",
     imageUrl: "",
+    isNameValid: "",
   };
 
   async componentDidMount() {
@@ -25,30 +26,36 @@ class MainAppCrud extends React.Component {
 
   handleChange = (e) => {
     // console.log(e.target.id);
-    this.setState({ [e.target.id]: e.target.value });
+    this.setState({ [e.target.id]: e.target.value, isNameValid: false });
   };
 
   handleCreateClick = async () => {
-    this.setState({ spinner: true });
-    const newPerson = {
-      name: this.state.inputName,
-      country: this.state.country,
-      image: this.state.imageUrl,
-    };
-    try {
-      const createdPerson = await API.post("/person", newPerson);
+    if (this.state.inputName.length < 5) {
+      this.setState({ isNameValid: true });
+    } else {
+      this.setState({ isNameValid: false });
 
-      this.setState((prev) => {
-        return {
-          persons: [...prev.persons, createdPerson.data],
-          inputName: "",
-          country: "",
-          imageUrl: "",
-          spinner: false,
-        };
-      });
-    } catch (err) {
-      console.log(err);
+      const newPerson = {
+        name: this.state.inputName,
+        country: this.state.country,
+        image: this.state.imageUrl,
+      };
+      try {
+        this.setState({ spinner: true });
+        const createdPerson = await API.post("/person", newPerson);
+
+        this.setState((prev) => {
+          return {
+            persons: [...prev.persons, createdPerson.data],
+            inputName: "",
+            country: "",
+            imageUrl: "",
+            spinner: false,
+          };
+        });
+      } catch (err) {
+        console.log(err);
+      }
     }
   };
   insertPersons = () => {
@@ -112,6 +119,7 @@ class MainAppCrud extends React.Component {
             </button>
           </div>
         </div>
+        {this.state.isNameValid && <p style={{ color: "red" }}>Please enter a valid name (more then 5 letters)</p>}
         <div>{this.state.spinner ? <Spinner /> : <div className="card-container">{this.insertPersons()}</div>}</div>
       </div>
     );
