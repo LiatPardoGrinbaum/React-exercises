@@ -4,12 +4,11 @@ import React, { useState } from "react";
 const arr = ["one", "two", "three", "four", "five"];
 
 const Ex18_4_mark_delete = () => {
-  // const [arrNum, setArrNum] = useState(arr);
-  // const [checked, setChecked] = useState(false);
+  const [arrNum, setArrNum] = useState(arr);
   const [checkedState, setCheckedState] = useState(new Array(arr.length).fill(false));
 
   const insertCheckBox = () => {
-    return arr.map((num, index) => {
+    return arrNum.map((num, index) => {
       return (
         <li>
           <input type="checkbox" checked={checkedState[index]} onChange={handleChange} key={index} id={index} />
@@ -18,28 +17,39 @@ const Ex18_4_mark_delete = () => {
       );
     });
   };
-  ///need to fix!!!!! and add reset button (easier i think)
+
   const handleClick = () => {
-    const filtered = checkedState.filter((item) => item === false);
-    console.log(filtered);
+    const newArrNum = [];
+    const newCheckedState = [];
+    arrNum.forEach((num, index) => {
+      if (checkedState[index] === false) {
+        newArrNum.push(num);
+        newCheckedState.push(checkedState[index]);
+      }
+    });
+    setArrNum(newArrNum);
+    setCheckedState(newCheckedState);
   };
+
+  const handleReset = () => {
+    setArrNum(arr);
+    setCheckedState(new Array(arr.length).fill(false));
+  };
+
   const handleChange = ({ target: { id } }) => {
     const updatedCheckedState = checkedState.map((item, index) => {
-      // console.log(index);
-      // console.log(id);
-      // console.log(!item);
       const bool = Number(id) === index ? !item : item;
-      // console.log(bool);
+
       return bool;
     });
-    console.log(updatedCheckedState);
+    // console.log(updatedCheckedState);
     setCheckedState(updatedCheckedState);
   };
 
   return (
     <div>
       <button onClick={handleClick}>Delete</button>
-      <button>Reset</button>
+      <button onClick={handleReset}>Reset</button>
       <ul>{insertCheckBox()}</ul>
     </div>
   );
