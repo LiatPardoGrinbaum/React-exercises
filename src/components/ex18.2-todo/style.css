@@ -1,0 +1,23 @@
+.tasks-container {
+  border: 2px grey solid;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.task {
+  cursor: pointer;
+}
+
+.task span {
+  padding-right: 5px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+.undone {
+  text-decoration: none;
+}

@@ -25,6 +25,9 @@ import VideoApp from "./components/codeAlongReact/videoApp";
 import MainApp from "./components/e16.1-product-router/MainApp";
 import TodoApp from "./components/todoApp/TodoApp";
 import MainAppCrud from "./components/ex17.1-crud-mini-project/MainAppCrud";
+import Ex18_1_ReadMore from "./components/ex18.1-readmore/Ex18_1_readMore";
+import Ex18_2_todo from "./components/ex18.2-todo/Ex18_2_todo";
+import Ex18_3_time from "./components/ex18.3-time/Ex18_3_time";
 
 class App extends React.Component {
   render() {
@@ -47,15 +50,18 @@ class App extends React.Component {
         {/*  <Ex11_1_events_child_parent /> */}
         {/* <Ex11_2_checkbox /> */}
         {/*  <Ex11_3_forms /> */}
-        {/*  <Ex12_1_API /> */}
+        {/* <Ex12_1_API /> */}
         {/* <Ex13_1_map /> */}
         {/*  <Ex13_2_avatar /> */}
         {/*  <Ex14_1_ref /> */}
         {/* <Ex14_2_ref /> */}
         {/*  <VideoApp /> */}
-        {/*   <MainApp /> */}
+        {/* <MainApp /> */}
         {/* <TodoApp /> */}
-        <MainAppCrud />
+        {/* <MainAppCrud /> */}
+        {/* <Ex18_1_ReadMore /> */}
+        {/* <Ex18_2_todo /> */}
+        <Ex18_3_time />
       </div>
     );
   }

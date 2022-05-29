@@ -8,6 +8,8 @@ class Products extends React.Component {
   componentDidMount() {
     this.setState({ store: store });
   }
+  // the below i could also define inside a function and call it below.. i can also return (with map) more divs and html element for each card.
+  //can make it all inside all inside the link (<link> blala</link>) includong passing props.
   render() {
     return (
       <div>

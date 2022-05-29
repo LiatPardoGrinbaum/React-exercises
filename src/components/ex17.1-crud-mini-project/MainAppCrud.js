@@ -91,7 +91,7 @@ class MainAppCrud extends React.Component {
     this.setState((prev) => {
       return {
         persons: prev.persons.map((person) => {
-          if (person.id === id) {
+          if (person.id === data.id) {
             return data;
           } else {
             return person;

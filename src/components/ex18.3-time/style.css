@@ -1,0 +1,11 @@
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  gap: 5px;
+}
+/* .inside-container {
+  display: flex;
+  flex-direction: column;
+} */

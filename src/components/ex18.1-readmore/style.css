@@ -1,0 +1,13 @@
+.text-box {
+  padding: 5px;
+  margin: 10px;
+  width: 400px;
+  height: auto;
+  border: grey solid 2px;
+  border-radius: 10px;
+}
+
+.text-box span {
+  color: blue;
+  cursor: pointer;
+}
