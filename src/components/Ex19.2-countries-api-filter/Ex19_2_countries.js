@@ -12,9 +12,8 @@ const Ex19_2_countries = () => {
       setResult(data);
       setresultFiltered(data);
     };
-    if (result.length === 0) {
-      getResult();
-    }
+
+    getResult();
   }, []);
 
   const insertCountries = () => {
