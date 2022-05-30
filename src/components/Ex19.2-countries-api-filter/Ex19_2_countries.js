@@ -15,7 +15,7 @@ const Ex19_2_countries = () => {
     if (result.length === 0) {
       getResult();
     }
-  }, [term]);
+  }, []);
 
   const insertCountries = () => {
     const filtered = result.filter((country) => country.name.common.toLowerCase().includes(term.toLowerCase()));
