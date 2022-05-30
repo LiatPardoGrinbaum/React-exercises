@@ -30,6 +30,7 @@ import Ex18_2_todo from "./components/ex18.2-todo/Ex18_2_todo";
 import Ex18_3_time from "./components/ex18.3-time/Ex18_3_time";
 import Ex18_4_mark_delete from "./components/ex18.4-mark-delete/Ex18_4_mark_delete";
 import Ex19_1_fetch from "./components/ex19.1-simple-fetch/Ex19_1_fetch";
+import Ex19_2_countries from "./components/Ex19.2-countries-api-filter/Ex19_2_countries";
 
 class App extends React.Component {
   render() {
@@ -65,7 +66,8 @@ class App extends React.Component {
         {/* <Ex18_2_todo /> */}
         {/* <Ex18_3_time /> */}
         {/* <Ex18_4_mark_delete /> */}
-        <Ex19_1_fetch />
+        {/* <Ex19_1_fetch /> */}
+        <Ex19_2_countries />
       </div>
     );
   }
