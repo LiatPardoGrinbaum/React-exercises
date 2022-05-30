@@ -29,6 +29,7 @@ import Ex18_1_ReadMore from "./components/ex18.1-readmore/Ex18_1_readMore";
 import Ex18_2_todo from "./components/ex18.2-todo/Ex18_2_todo";
 import Ex18_3_time from "./components/ex18.3-time/Ex18_3_time";
 import Ex18_4_mark_delete from "./components/ex18.4-mark-delete/Ex18_4_mark_delete";
+import Ex19_1_fetch from "./components/ex19.1-simple-fetch/Ex19_1_fetch";
 
 class App extends React.Component {
   render() {
@@ -63,7 +64,8 @@ class App extends React.Component {
         {/* <Ex18_1_ReadMore /> */}
         {/* <Ex18_2_todo /> */}
         {/* <Ex18_3_time /> */}
-        <Ex18_4_mark_delete />
+        {/* <Ex18_4_mark_delete /> */}
+        <Ex19_1_fetch />
       </div>
     );
   }
