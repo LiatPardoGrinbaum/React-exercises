@@ -32,6 +32,7 @@ import Ex18_4_mark_delete from "./components/ex18.4-mark-delete/Ex18_4_mark_dele
 import Ex19_1_fetch from "./components/ex19.1-simple-fetch/Ex19_1_fetch";
 import Ex19_2_countries from "./components/Ex19.2-countries-api-filter/Ex19_2_countries";
 import Ex19_3_algolia_api from "./components/ex19.3-algoliaAPi/Ex19_3_algolia_api";
+import Ex19_4_avatar_refactor from "./components/Ex19.4-avatar-refactor/Ex19_4_avatar_refactor";
 
 class App extends React.Component {
   render() {
@@ -56,7 +57,7 @@ class App extends React.Component {
         {/*  <Ex11_3_forms /> */}
         {/* <Ex12_1_API /> */}
         {/* <Ex13_1_map /> */}
-        {/*  <Ex13_2_avatar /> */}
+        {/* <Ex13_2_avatar /> */}
         {/*  <Ex14_1_ref /> */}
         {/* <Ex14_2_ref /> */}
         {/*  <VideoApp /> */}
@@ -69,7 +70,8 @@ class App extends React.Component {
         {/* <Ex18_4_mark_delete /> */}
         {/* <Ex19_1_fetch /> */}
         {/* <Ex19_2_countries /> */}
-        <Ex19_3_algolia_api />
+        {/* <Ex19_3_algolia_api /> */}
+        <Ex19_4_avatar_refactor />
       </div>
     );
   }
