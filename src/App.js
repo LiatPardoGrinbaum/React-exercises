@@ -36,6 +36,7 @@ import Ex19_4_avatar_refactor from "./components/Ex19.4-avatar-refactor/Ex19_4_a
 import Ex_20_1_cancel_request from "./components/Ex20.1-cancel_request/Ex_20_1_cancel_request";
 import Ex21_1_editing from "./components/Ex.21_1_editing/Ex21_1_editing";
 import Ex21_2_play_pause from "./components/ex21.2-play-pause-video/Ex21_2_play_pause";
+import Ex21_3_toggle_image from "./components/ex21.3-toggle-image/Ex21_3_toggle_image";
 
 class App extends React.Component {
   render() {
@@ -77,7 +78,8 @@ class App extends React.Component {
         {/* <Ex19_4_avatar_refactor /> */}
         {/* <Ex_20_1_cancel_request /> */}
         {/* <Ex21_1_editing /> */}
-        <Ex21_2_play_pause />
+        {/* <Ex21_2_play_pause /> */}
+        <Ex21_3_toggle_image />
       </div>
     );
   }
