@@ -33,6 +33,9 @@ import Ex19_1_fetch from "./components/ex19.1-simple-fetch/Ex19_1_fetch";
 import Ex19_2_countries from "./components/Ex19.2-countries-api-filter/Ex19_2_countries";
 import Ex19_3_algolia_api from "./components/ex19.3-algoliaAPi/Ex19_3_algolia_api";
 import Ex19_4_avatar_refactor from "./components/Ex19.4-avatar-refactor/Ex19_4_avatar_refactor";
+import Ex_20_1_cancel_request from "./components/Ex20.1-cancel_request/Ex_20_1_cancel_request";
+import Ex21_1_editing from "./components/Ex.21_1_editing/Ex21_1_editing";
+import Ex21_2_play_pause from "./components/ex21.2-play-pause-video/Ex21_2_play_pause";
 
 class App extends React.Component {
   render() {
@@ -71,7 +74,10 @@ class App extends React.Component {
         {/* <Ex19_1_fetch /> */}
         {/* <Ex19_2_countries /> */}
         {/* <Ex19_3_algolia_api /> */}
-        <Ex19_4_avatar_refactor />
+        {/* <Ex19_4_avatar_refactor /> */}
+        {/* <Ex_20_1_cancel_request /> */}
+        {/* <Ex21_1_editing /> */}
+        <Ex21_2_play_pause />
       </div>
     );
   }
